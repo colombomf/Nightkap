@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Are you interested in different cocktails? Let us help you discover hundreds of new cocktail recipes.">
+    <meta name="keywords" content="cocktail, recipes, recommendations">
+
+    <title>Nightkap - A Cocktail Database based Web App</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- preloader -->
+    <script src="https://kit.fontawesome.com/84c1716525.js" crossorigin="anonymous"></script>
+</head>
+<body class="preload">
+
+  <div id="pagewrap">
+
+    <header id="main">
+		<h1>NIGHTKAP</h1>
+    <!-- Search and Hidden Randomizer -->
+		<input id="myInput" onfocus="this.value=''" type="text" name="" value="" placeholder="Search your recipe"><button class="button-primary" id="get_drinks" ><i class="fa fa-search"></i></button>
+    <button type="button" name="button" style="display: none;">Randomizer</button>
+    </header>
+    <!-- Random recommendation -->
+    <section class="left-section">
+      <h3>Try a new flavour?</h3>
+      <article> 
+        <!-- Copy cocktail recommended to clipboard -->     
+        <div id="copy2Clipboard"><h2></h2></div><img src="" alt=""  style="width: 100%;max-height: 100%" src="" alt=""><button class="copyBtn" type="submit" onclick="copyDivToClipboard()">Copy Cocktail's Name <i class="fa-solid fa-copy"></i></button>
+        
+        <p>Search for your favourite drink recipe by name or try something new by checking one of our recommendations above.</p>
+        
+    	</article>
+    </section>
+    <!-- Search results -->
+    <section class="right-section">
+      <h3>Your Search Results</h3>
+      <article>  
+        <div id="drinks" class="row drinks"></div>
+<br>
+	  </article>
+    </section>
+      <!-- Bartending pics -->
+       <section id="image-section">
+      <article id="left-image" class="imgs">
+        <img src="img/api1.png"/>
+        <p></p> </article>
+
+      <article id="middle-image" class="imgs">
+        <img src="img/api2.png"/>
+        <p></p> </article>
+
+      <article id="right-image" class="imgs">
+        <img src="img/api3.png"/>
+        <p>
+          
+        </p>
+      </article>
+    </section>
+    
+    <!-- Loader -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- Link to Nightkap Code -->
+    <footer>
+      <a href="https://github.com/colombomf"> <img src="img/2.png" style="width: 25px;" alt=""> </a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+    <!-- JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
+ 
