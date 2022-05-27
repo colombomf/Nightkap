@@ -1,0 +1,413 @@
+
+
+/* Loader */
+.preload {
+  overflow: hidden;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0f1713;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
+*{
+  background-color: #202020; /* bg colour */
+  color: rgb(211, 211, 211);
+  text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* Layout */
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #202020; /* bg colour */
+  color: #666;
+  font-family: 'entypo', sans-serif; font-size: 2vh;
+  font-size: 16px;
+}
+
+h3{
+  font-weight: 100;
+}
+
+input#myInput[type=text] {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+
+
+  background-color: #202020;
+  margin-bottom: 20px;
+  transition: width 0.4s ease-in-out;
+  text-align: left;
+  
+  font-size:18px;
+  font-family: lato;
+  letter-spacing:2px; 
+  height: 50px;
+  border: 2px solid rgb(73, 73, 73);
+  border-right: none;
+
+
+  padding:4px 10px;
+  -webkit-transition:all 0.3s ease-in;
+
+}
+  /* input#myInput[type=text]:focus {
+  width: 35%;
+}  */
+
+
+.copyBtn{
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+
+
+  background-color: #202020;
+  margin-bottom: 20px;
+  transition: width 0.4s ease-in-out;
+  text-align: left;
+  
+  font-size:18px;
+  font-family: lato;
+  letter-spacing:2px; 
+  height: 50px;
+  border: 2px solid rgb(73, 73, 73);
+
+  
+
+  padding:4px 10px;
+  -webkit-transition:all 0.3s ease-in;
+}
+
+/* search button */
+#get_drinks{
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+
+
+  background-color: #202020;
+  margin-bottom: 20px;
+  transition: width 0.4s ease-in-out;
+  text-align: left;
+  
+  font-size:18px;
+  font-family: lato;
+  letter-spacing:2px; 
+  height: 50px;
+  border: 2px solid rgb(73, 73, 73);
+  border-left: none;
+  
+
+  padding:4px 10px;
+  -webkit-transition:all 0.3s ease-in;
+
+
+}
+
+.img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* borders for almost every element */
+#pagewrap, #main, nav, .imgs, footer{
+  /* border: 1px solid #ccc; */
+  border-collapse: collapse;
+}
+
+/* borders for left and right containers*/
+.left-section, .right-section{
+  border: 1px solid rgb(73, 73, 73);
+  border-collapse: collapse;
+}
+
+#pagewrap{ /* bg body */
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4))
+}
+
+/* main header */
+#main, nav, section, footer{
+  margin: 1%;
+}
+
+#main{ /* bg header */
+  width: 100%;
+  height: auto;
+  margin: 2% auto;
+  background-color: #0A0A0A;
+  /* background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)); */
+  background-position: 100% 100%;
+}
+
+#main h1{
+  text-align: center;
+  font-size: 5vw;
+  padding: 200px; /* header size */
+  /* bg main header */
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/drink-g5ed9613e1_1920_g.jpg");
+  background-position: 100% 50%;
+}
+/* end of main header */
+
+/* navigation section */
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li{
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  height: 2%;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #666;
+  padding: 20px;
+}
+
+/* an underline appears at the bottom on hover of each link */
+nav ul li a:hover, nav ul li a:active{
+  /* border-bottom: 2px solid #ccc; */
+  padding-bottom: 8px;
+}
+/* end of navigation section*/
+
+/* left column of first content */
+.left-section{
+  float: left;
+  width: 48%; /* 455/960*/
+  height: auto;
+  padding: 30px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.left-section h3{
+  text-align: center;
+  padding: 15px;
+}
+/* end of left column of first content */
+
+/* right column of first content */
+.right-section{
+  float: right;
+  width: 48%; /* 455/960*/
+  height: auto;
+  padding: 30px;
+  line-height: 1.8;
+  text-indent: 5px;
+  text-align: justify;
+}
+
+.right-section h3{
+  text-align: center;
+  padding: 15px;
+}
+/* end of right column of first content */
+
+/* images section */
+#image-section{   /* container for images section */
+  clear: both;
+}
+
+#left-image, #middle-image{
+  margin-right: 2%;
+}
+
+.imgs{      /* class for the three images  */
+  width: 32%;
+  float: left;
+  margin-bottom: 1.5%;
+  margin-top: 1%;
+}
+
+.imgs img{
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.imgs p{
+  line-height: 1.8;
+  text-align: justify;
+  padding: 20px;
+  font-size: .90em;
+}
+/*  end of images section */
+
+/* footer */
+footer{
+  clear: both;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4))
+}
+
+footer p{
+  padding: 30px;
+}
+/* end of footer */
+
+/******** media queries ********/
+
+@media screen and (max-width: 900px){
+  #pagewrap {
+		width: auto;
+		float: none;
+	}
+
+	.left-section {
+
+		float: none;
+		margin: 1%;
+    display: inline-block;
+  height: 100%;
+
+	}
+
+  .right-section{
+
+    float: none;
+    margin: 1%;
+    display: inline-block;
+  height: 50%;
+  }
+
+  .imgs{
+    width: 100%;
+    float: none;
+  }
+
+  /* .img {
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+    
+  } */
+  
+  #left-image, #middle-image{
+    margin: none;
+  }
+
+  nav ul li a{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  nav ul li{
+    padding: 5px;
+  }
+}
+
+/* 
+
+
+*/
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
